@@ -7,8 +7,8 @@ from EstimarPiSpark import estimar_pi_spark
 
 class Test(TestCase):
 
-    NUMERO_CALCULOS = 200 * 1000 * 1000
-    NUMERO_BLOQUES = 3
+    NUMERO_CALCULOS = 50 * 1000 * 1000
+    NUMERO_BLOQUES = 1
 
     def test_estimar_pi(self):
         estimacion_de_pi=estimar_pi(self.NUMERO_CALCULOS)
