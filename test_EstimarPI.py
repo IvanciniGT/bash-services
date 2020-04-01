@@ -11,9 +11,9 @@ class Test(TestCase):
     NUMERO_BLOQUES = 1
 
     def test_estimar_pi(self):
-        estimacion_de_pi=estimar_pi(self.NUMERO_CALCULOS)
+        estimacion_de_pi = estimar_pi(self.NUMERO_CALCULOS)
         self.assertAlmostEqual(estimacion_de_pi, math.pi, 1)
 
     def test_estimar_pi_sprk(self):
-        estimacion_de_pi=estimar_pi_spark(self.NUMERO_CALCULOS, self.NUMERO_BLOQUES)
+        estimacion_de_pi = estimar_pi_spark(self.NUMERO_CALCULOS, self.NUMERO_BLOQUES)
         self.assertAlmostEqual(estimacion_de_pi, math.pi, 1)
